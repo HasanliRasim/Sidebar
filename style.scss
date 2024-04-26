@@ -1,0 +1,55 @@
+.div {
+  display: flex;
+  justify-content: flex-end;
+  .btn {
+    cursor: pointer;
+  }
+}
+.sidebar {
+    opacity: 0;
+    display: flex; 
+    flex-direction: column;
+    background-color: #b9bbbd;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &__up {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .btn_exit {
+      cursor: pointer;
+    }
+    &__title {
+      margin-right: 50px;
+      color: #1394dd;
+    }
+    &__img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__nav {
+    &__ul {
+      margin-top: 50%;
+      
+      &__list {
+        list-style-type: none;
+        color: #2f5971;
+        margin-bottom: 30px;
+        font-size: 25px;
+      }
+    }
+  }
+  &__icons {
+    margin-top: 50%;
+    margin-left: 40px;
+  }
+}

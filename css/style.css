@@ -1,0 +1,53 @@
+.div {
+  display: flex;
+  justify-content: flex-end;
+}
+.div .btn {
+  cursor: pointer;
+}
+
+.sidebar {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #b9bbbd;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.sidebar.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar__up {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sidebar__up .btn_exit {
+  cursor: pointer;
+}
+.sidebar__up__title {
+  margin-right: 50px;
+  color: #1394dd;
+}
+.sidebar__up__img {
+  width: 20px;
+  height: 20px;
+}
+.sidebar__nav__ul {
+  margin-top: 50%;
+}
+.sidebar__nav__ul__list {
+  list-style-type: none;
+  color: #2f5971;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.sidebar__icons {
+  margin-top: 50%;
+  margin-left: 40px;
+}/*# sourceMappingURL=style.css.map */
